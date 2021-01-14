@@ -1,12 +1,14 @@
 package com.ebookfrenzy.roomdemo;
-import androidx.lifecycle.LiveData;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 import java.util.List;
 @Dao
+
 public interface ProductDao {
+
     @Insert
     void insertProduct(Product product);
     @Query("SELECT * FROM products WHERE productName = :name")

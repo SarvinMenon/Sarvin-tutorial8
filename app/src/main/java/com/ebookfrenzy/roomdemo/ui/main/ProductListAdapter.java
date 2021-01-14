@@ -1,4 +1,5 @@
 package com.ebookfrenzy.roomdemo.ui.main;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,21 +9,25 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.annotation.NonNull;
 import com.ebookfrenzy.roomdemo.Product;
 import java.util.List;
-public class ProductListAdapter
-        extends RecyclerView.Adapter<ProductListAdapter.ViewHolder> {
+
+public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.ViewHolder> {
     private final int productItemLayout;
     private List<Product> productList;
+
     public ProductListAdapter(int layoutId) {
         productItemLayout = layoutId;
     }
+
     public void setProductList(List<Product> products) {
         productList = products;
         notifyDataSetChanged();
     }
+
     @Override
     public int getItemCount() {
         return productList == null ? 0 : productList.size();
     }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -30,6 +35,7 @@ public class ProductListAdapter
                 parent.getContext()).inflate(productItemLayout, parent, false);
         return new ViewHolder(view);
     }
+
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int listPosition) {
         TextView item = holder.item;
@@ -42,4 +48,4 @@ public class ProductListAdapter
             item = itemView.findViewById(R.id.product_row);
         }
     }
-    }
+}

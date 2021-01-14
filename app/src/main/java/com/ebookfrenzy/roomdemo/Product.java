@@ -6,7 +6,6 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 @Entity(tableName = "products")
 
-
 public class Product {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "productId")
@@ -15,12 +14,12 @@ public class Product {
     @ColumnInfo(name = "productName")
     private String name;
     private int quantity;
-
     public Product(String name, int quantity) {
         this.id = id;
         this.name = name;
         this.quantity = quantity;
     }
+
     public int getId() {
         return this.id;
     }
