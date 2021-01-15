@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#CDDC39"
     android:orientation="vertical"
     tools:context=".ui.main.MainFragment">
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TableRow
             android:layout_width="match_parent"
@@ -18,10 +19,10 @@
             android:layout_margin="10dp">
 
             <TextView
-                android:id="@+id/textView"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/product_id"
+                android:textColor="#B84F4F"
                 android:textSize="18sp" />
 
             <TextView
@@ -30,6 +31,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/not_assigned"
                 android:textSize="18sp" />
+
         </TableRow>
 
         <TableRow
@@ -38,10 +40,11 @@
             android:layout_margin="10dp">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/product_name"
+                android:textColor="#B84F4F"
                 android:textSize="18sp" />
 
             <EditText
@@ -49,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="none|textPersonName"
+                android:inputType="none"
                 android:textSize="18sp" />
         </TableRow>
 
@@ -59,14 +62,15 @@
             android:layout_margin="10dp">
 
             <TextView
-                android:id="@+id/productQuantity"
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/product_quantity"
+                android:textColor="#B84F4F"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editTextNumberDecimal"
+                android:id="@+id/productQuantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -90,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/add"
-            android:textColor="@color/black" />
+            android:textColor="#9E1F1F" />
 
         <Button
             android:id="@+id/findButton"
@@ -99,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/find"
-            android:textColor="@color/black" />
+            android:textColor="#9E1F1F" />
 
         <Button
             android:id="@+id/deleteButton"
@@ -108,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/delete"
-            android:textColor="@color/black" />
+            android:textColor="#9E1F1F" />
 
     </LinearLayout>
 

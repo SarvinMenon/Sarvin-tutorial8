@@ -25,7 +25,7 @@ public class MainFragment extends Fragment {
     private ProductListAdapter adapter;
     private TextView productId;
     private EditText productName;
-    private EditText productQuantity;
+    private TextView productQuantity;
 
     public static MainFragment newInstance() {
         return new MainFragment();
